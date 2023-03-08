@@ -19,13 +19,12 @@ use App\Http\Controllers\TestController;
 
 Route::get('/',Homecontroller::class);
 
-Route::get('cursos.test',TestController::class);
+Route::get('test',TestController::class);
 
 Route::controller(CursoController::class)->group(function(){
     Route::get('cursos','index');
     Route::get('cursos/create','create');
     Route::get('cursos/{curso}','show'); 
-    Route::get('cursos','test');
 });
 
 
