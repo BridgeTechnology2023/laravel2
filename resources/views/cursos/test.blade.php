@@ -6,14 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test</title>
 </head>
+<style type="text/css">
+    .color{
+        color: white;
+    }
+
+    *{
+        background-color: black;
+    }
+   </style>
 <body>
+    
     <center>
-        <h2>This is a test whith laravel</h2>
+        <h2 class="color">This is a test whith laravel</h2>
 
         <ol>
-            <li>User name:</li>
-            <li>Password:</li>
-            <li>Re-write password:</li>
+            <li class="color">User name:</li>
+            <li class="color">Password:</li>
+            <li class="color">Re-write password:</li>
         </ol>
     </center>
 </body>

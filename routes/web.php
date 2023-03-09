@@ -21,11 +21,11 @@ Route::get('/',Homecontroller::class);
 
 Route::get('test',TestController::class);
 
-Route::controller(CursoController::class)->group(function(){
+ Route::controller(CursoController::class)->group(function(){
     Route::get('cursos','index');
     Route::get('cursos/create','create');
     Route::get('cursos/{curso}','show'); 
-});
+}); 
 
 
 
